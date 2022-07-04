@@ -1,0 +1,75 @@
+<ion-content >
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>
+    FindPets
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+  <ion-toolbar>
+    <ion-row>
+      <ion-col col-6>
+        <ion-button  (click)="historial()" shape="round" fill="outline">
+          <ion-icon name="eye-outline"></ion-icon>
+         Mascotas Extraviadas
+        </ion-button>    
+      </ion-col>
+        </ion-row>
+      </ion-toolbar>
+    
+     <ion-toolbar>
+    <p>Paso 1:Sube Fotos de tu mascota</p>
+  </ion-toolbar>
+
+    <ion-toolbar >
+    <ion-button fill ="clear" expand="full" color="light" (click)="changeImage()">
+      Ingresa una foto
+      <ion-icon slot ="start" name="camera"></ion-icon>
+     
+      <br>
+      O sube una foto
+      <ion-input type="file" multiple accept="image/png, image/jpeg"></ion-input>
+    </ion-button>
+   
+  </ion-toolbar>
+
+  <div class="preview">
+    <ion-card >
+      <img *ngIf="profile?.imageUrl; else placeholder_avatar;" [src]="profile.imageUrl" > 
+    </ion-card>
+  </div>
+
+  
+    <ion-toolbar >
+      <p>Paso 2: ¿Dónde se perdió?</p>
+      <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="UpdateSearchResults()" placeholder="Dirección"  (ionClear)="ClearAutocomplete()"></ion-searchbar>
+    </ion-toolbar>
+    <ion-list [hidden]="autocompleteItems.length == 0" >
+      <ion-item *ngFor="let item of autocompleteItems" tappable (click)="SelectSearchResult(item)" >
+        {{ item.description }}
+      </ion-item>
+    </ion-list>
+      
+    <div class="map-wrapper" style="height: 50%;">      
+      <div id="map_center">
+        <ion-icon name="pin" size="large" color="danger"></ion-icon>      
+      </div>
+      <div #map id="map"  style="height: 85%;"></div>
+    
+      <p>Paso 3: 
+        Completar Formulario:
+        <a (click)="addFind()">Haz click aquí</a>.
+        </p>
+<br>
+<br>
+    </div>   
+     
+    
+</ion-content>

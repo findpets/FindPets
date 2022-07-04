@@ -1,0 +1,46 @@
+<ion-content>
+<ion-row></ion-row>
+  <ion-header>
+    <ion-toolbar> 
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title *ngIf="info">
+       Findpets 
+      </ion-title>
+    </ion-toolbar> 
+    <div *ngIf="info">
+      <ion-label>
+        Bienvenid@
+      </ion-label>
+      <ion-label>
+        {{info.nombre}}
+      </ion-label>
+    </div>
+  </ion-header>
+  <ion-row></ion-row>
+  <ion-row></ion-row>
+  <ion-card>  
+    <ion-card-header>
+      <h1>Información de usuario</h1>
+    </ion-card-header>
+  
+    <ion-card-content *ngIf="info">
+        <div class="ion-text-center">
+          <ion-img src="./assets/img/doge.png"></ion-img>
+        </div>
+        <div>
+          <ion-card-content>Correo:
+            {{info.correo}}
+          </ion-card-content>
+          <ion-card-content>Edad:
+            {{info.edad}}
+          </ion-card-content>
+        </div>
+    </ion-card-content> 
+  </ion-card>
+
+
+
+
+</ion-content>

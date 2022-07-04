@@ -1,0 +1,50 @@
+<ion-content>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="ion-text-left">
+        FindPets
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-row></ion-row>
+  <ion-row></ion-row>
+  <ion-row></ion-row>
+
+ 
+  <ion-card class="ion-text-center">
+    <ion-card-header >
+      <ion-card-subtitle>¿Quiénes Somos?</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+    En FindPets queremos lo mejor para todos los animales. Aquí podrás adoptar a una mascota o encontrarla en caso de que se haya perdido.
+    </ion-card-content>
+
+  </ion-card>
+  <ion-row></ion-row>
+  <ion-card #img>
+    <ion-card-content >
+      Conoce más sobre la fundación
+      <a href="#" onclick="window.open('https://www.instagram.com/opapenablanca/ ', '_system', 'location=yes');"  target="_blank">
+      <img width="100" height="100"alt="" src="assets/img/opa.png">
+    </a>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-label class="ion-text-center">
+    <h2>¿Empezamos?</h2>
+  </ion-label>
+  <div id="content" class="ion-text-center">
+      <ion-button expand="block" class="btn btn1" (click)="adoptar()">
+      <ion-icon name="paw-outline"></ion-icon> Adoptar
+      </ion-button>
+    <ion-button expand="block" class="btn btn1" (click)="perdido()">
+      <ion-icon name="heart-half-outline"></ion-icon>Reportar </ion-button>
+  </div>
+
+</ion-content>

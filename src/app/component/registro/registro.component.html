@@ -1,0 +1,45 @@
+
+<ion-content class="ion-padding">
+  <ion-row></ion-row>
+   <ion-row></ion-row>
+      <ion-img src="assets/img/FindPetsICON.png"></ion-img>
+      <div id="label" class="ion-text-center">
+        <ion-label >Regístrate</ion-label>
+        <ion-row></ion-row>
+     </div>
+
+<ion-item fill ="solid" class="ion-margin-bottom">
+  <ion-label>Nombre</ion-label>
+  <ion-input [(ngModel)]="datos.nombre"></ion-input>
+</ion-item>
+
+  <ion-item fill ="solid" class="ion-margin-bottom">
+    <ion-label>Correo</ion-label>
+    <ion-input [(ngModel)]="datos.correo"></ion-input>
+  </ion-item>
+
+  <ion-item fill ="solid" class="ion-margin-bottom">
+    <ion-label>Edad</ion-label>
+    <ion-input type="number" [(ngModel)]="datos.edad"></ion-input>
+  </ion-item>
+  
+  <ion-item fill ="solid" class="ion-margin-bottom">    <ion-label>Contraseña </ion-label>
+    <ion-input type="password" [(ngModel)]="datos.password"></ion-input>
+  </ion-item>
+
+  <div id="content" class="ion-text-center">
+<ion-button (click)="registrar()">
+  Registrarme  
+  <ion-icon name="paw-outline"></ion-icon>
+</ion-button>
+
+<ion-button [routerLink]="['/login']" routerLinkActive="router-link-active" >
+  Regresar
+</ion-button>
+</div>
+  
+
+
+
+
+</ion-content>

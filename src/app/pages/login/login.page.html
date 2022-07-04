@@ -1,0 +1,37 @@
+   
+<ion-content class="ion-padding">
+   <ion-row></ion-row>
+   <ion-row></ion-row>
+   <ion-img src="assets/img/iconfp.png"></ion-img>
+     
+   <div id="label" class="ion-text-center">
+   <ion-row></ion-row>
+ </div>
+
+     <ion-item fill ="solid" class="ion-margin-bottom">
+       <ion-label>Correo</ion-label>
+       <ion-input type="email" [(ngModel)]="credenciales.correo"></ion-input>
+     </ion-item>
+     
+     <ion-item fill ="solid" class="ion-margin-bottom">
+      <ion-label>Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="credenciales.password"></ion-input>
+    </ion-item>
+   
+    <div id="content" class="ion-text-center">
+    <ion-button expand="block" type="submit" (click)="login()">
+      Ingresar
+      <ion-icon name="paw-outline"></ion-icon> 
+    </ion-button>
+    <ion-button  expand="block" type="button" [routerLink]="['/registro']" routerLinkActive="router-link-active" >
+      Registrarse
+      <ion-icon name="person-add-outline"></ion-icon>
+    </ion-button>
+  </div>
+    <ion-footer class="ion-text-center">
+      <br> @Grupo3 2022 
+      <br>DuocUC
+     
+    </ion-footer>
+  
+</ion-content>

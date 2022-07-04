@@ -1,0 +1,104 @@
+<ion-content >
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>FindPets</ion-title>
+    </ion-toolbar>   
+  </ion-header>
+  
+    <div class="ion-text-center">
+        <ion-row></ion-row>
+        <ion-row></ion-row>
+        <ion-card-header>
+          <ion-card-subtitle>¿Estás pensando en adoptar?
+            <br>
+            Aquí podrás encontrar animalitos disponibles para adoptar.
+          </ion-card-subtitle>
+      </ion-card-header>
+      
+    <ion-row></ion-row>
+
+    </div>
+
+  <ion-slides [options]="mascSlideOpts">
+        
+    <ion-slide >
+      <article class="card" >
+        <img src="assets/img/dorito.jpg" alt="" class = "card__img" >
+        <div class="card__data" >
+          <h2 class="card__title">Dorito</h2>
+          <p class="card__description"> 
+            • MACHO
+            <br>• 2 MESES 
+            <br>• VACUNADO  
+          </p>
+        </div>
+    </article>
+    </ion-slide> 
+    <ion-slide>
+      <article class="card">
+        <img src="assets/img/anne.jpg" alt="" class = "card__img" >
+        <div class="card__data" >
+        <h2 class="card__title">Anne</h2>
+        <p class="card__description"> 
+          • HEMBRA
+          <br>• 10 MESES 
+          <br>• VACUNADA  
+  </p>
+        <a href="#" class="card_btn"></a>
+      </div>
+    </article>
+    </ion-slide>
+  
+    <ion-slide>
+      <article class="card">
+        <img src="assets/img/drako.jpg" alt="" class = "card__img" >
+        <div class="card__data" >
+        <h2 class="card__title">Drako</h2>
+        <p class="card__description"> 
+          • MACHO
+          <br>• 2 AÑOS APP. 
+          <br>• CASTRADO  
+          <br>• CHIPEADO
+          <br>• SIN ANIMALES Y/O NIÑOS PEQUEÑOS
+  </p>
+        <a href="#" class="card_btn"></a>
+      </div>
+    </article>
+    </ion-slide>
+  
+    <ion-slide>
+      <article class="card">
+        <img src="assets/img/luna.jpg" alt="" class = "card__img" >
+        <div class="card__data" >
+        <h2 class="card__title">Luna</h2>
+        <p class="card__description"> 
+          • HEMBRA
+          <br>• 7 MESES 
+          <br>• VACUNADA 
+          <br>• ESTERILIZADA
+          <br>• JUGUETONA
+  </p>
+        <a href="#" class="card_btn"></a>
+      </div>
+    </article>
+    </ion-slide>
+
+  </ion-slides>
+  <br>
+  <br>
+    
+    <ion-button  fill="clear" (click)="addUser()" >    
+      <ion-icon name="paw-outline"></ion-icon> Adoptar  
+    </ion-button>
+
+
+
+
+  </ion-content>
+  
+  
+  

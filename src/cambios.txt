@@ -1,0 +1,48 @@
+carpeta pages
+cambio imagen petfind, inicio sesisón en login, footer-- html, scss (revisarlos)
+agregar imagen en assets-img 
+///////////
+ng add @angular/fire
+npm uninstall -g firebase-tools
+npm install -g firebase-tools
+firebase logout
+firebase login --> findpets.fundacion@gmail.com
+firebase init, cambiar firebase --> firebase use --add, escoger el nuevo findpets551
+instalar todo, porq no sabemos q vamos a necesitar xd
+git mismo q gmail
+agregar en app.component.ts validaciones para ingresar
+en app.routing.module.ts from '@angular/fire/compat/auth-guard';
+en app.module.ts cambiar firebase por firebaseConfig
+agregar extension en environment
+angular.json deploy--firebaseProject/hosting 
+findpets551  /// buscar findpet550 y reemplazar por findpets551
+/////////////
+imagenes
+npm i @capacitor/camera
+npm install @ionic/pwa-elements
+npm install @capacitor/filesystem
+npm install @capacitor/storage 
+
+Androidmanifest.xmla 
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+//
+barra de carga
+npm install cordova-plugin-statusbar 
+npm install @awesome-cordova-plugins/status-bar 
+npm install cordova-plugin-splashscreen 
+npm install @awesome-cordova-plugins/splash-screen 
+//////////
+mapa
+npm install cordova-plugin-geolocation 
+npm install @awesome-cordova-plugins/geolocation 
+npm install @ionic-native/google-maps
+ionic cap sync
+index.html   
+  <!-- Google Maps Script-->
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU7l_YBlNYH8v84vn_Hp3mvh5kWGYF9f8"> </script>
+perdidos.ts ---import
+
+ npm install cordova-plugin-nativegeocoder 
+ npm install @awesome-cordova-plugins/native-geocoder 
